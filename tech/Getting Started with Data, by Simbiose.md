@@ -37,7 +37,7 @@ realms, like IoT (think of sensors and Smart Home algorithms) we can tell the di
 2.2. **Graphs**:<br/>
 This approach is, roughly speaking, the "semi-structured data" version of the relational model. There are still schemas and there are still relations, but with more "elasticity" (less rigidity) since there's no SQL (or other implementation of First-Order Logic).<br/>
 Instead of formal mathematical rules and rigid relationship/normalization rules, the graph/document-model approach is
-way more loosely coupled. In effect, there's even little to none mathematical involved.<br/>
+way more loosely coupled. In effect, there are, even, little to none "formal" mathematical models or theories involved.<br/>
 Such "lack of structure" is part of it's design (and one of it's core strenghts).<br/>
 2.3. **Data Lakes**:<br/>
 Here we have data of all sorts, there are no restrictions as to size, shape, relations or structures. "Organization" is out of the equation, data is simply thrown into this giant data storage.<br/>
