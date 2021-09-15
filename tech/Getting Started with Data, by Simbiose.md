@@ -98,8 +98,9 @@ Examples of **RDBMSs**: `PostgreSQL`, `Microsoft SQL Server (MSSQL)`, `MariaDB`,
 Examples of **NoSQL databases**: `Amazon DynamoDB`, `Azure Cosmos DB`, `Apache Cassandra`, `Apache CouchDB`, `MongoDB`
 
 ### In-depth
+
 4. We are presented with the 4 most famous **types of NoSQL databases**: Document Databases, Key-Value Databases, Graph Databases and Search Engines. <br/>
-4.1. **Document Databases**: Data is stored in *JSON documents* and there are no joins (there are no tables, just a bunch of *JSONs*). There are no joins, but there are links: you can't reference one document from another, but you can embed a document into another one. Documents of similar "kind/purpose" are grouped into *Collections*.<br/>
+4.1. **Document Databases**: Data is stored in *JSON documents* and there are no joins (there are no tables, just a bunch of *JSONs*). There are no joins, but there are links: you can't reference one document from another, but you can embed a document into another one. <br/>Documents of similar "kind/purpose" are grouped into *Collections*.<br/>
 4.2. **Key-Value Databases**: They store key-value pairs, as such:<br/>
 ![image](https://user-images.githubusercontent.com/79336695/133492406-a35eb245-5d5e-401e-8b60-0bf282f6573b.png)<br/>
 In the example above, the `39587942194` after `name_` could be the hash of "John" (derived using some hash function). This is sort of what a hash table (or a hash map) is, in essence.<br/>
