@@ -53,31 +53,37 @@ John    38     Engineer  [row 1]
 Mary    29     Astronaut [row 2]
 Greg    23     Plumber   [row 3]
 ```
+
 "How data looks like after being Row-Stored in the disk"
+
 ```
 DISK{#1[Name, Age, Job], #2[John, 38, Engineer], #3[Mary, 29, Astronaut], #4[Greg, 23, Plumber]}
 ```
-<br/>
+
 "Column-Store's Logic Arrangement"
+
 ```
-[name,column 1] [age,column 2] [job, column 3]
+[name,column 1] [age,column 2] [job,column 3]
    John              38            Engineer
    Mary              29            Astronaut
    Greg              23            Plumber
 ```
+
 "How data looks like after being Column-Stored in the disk"
+
 ```
 DISK{#1[Name], #2[Age], #3[Job], #4[John, Mary, Greg], #5[38, 29, 23], #6[Engineer, Astronaut, Plumber]}
 ```
+
 <br/>
 
 Keep in mind: disk operations are expensive in time.<br/>
 Therefore, "hopping" through various disk sectors when analyzing something is inefficient. When dealing with a large number of records (e.g., 100k or 1M records), this lack of efficiency will result into very long processing times.<br/>
 There's no better approach, Row-Store and Column-Store shine in different, somewhat opposing, scenarios/use-cases.<br/>
-It boils down to a very **low-level** problem of optimization, therefore it is very complex and has virtually no rule of thumbs. But, intuitively, the efficiency goal is:<br/>
-We don't want our cursor to be jumping around like crazy reading different disks sectors and doing heavy math for operations we don't really need. Ideally, we'd like our cursor to read our disk blocks "in a straight line" while grabbing/analyzing data.. like it already does for some cases (e.g., playing some mp3 file or overwriting a partition with zeros).<br/>
+It boils down to a very **low-level** problem of optimization, therefore it is very complex and has no 'rule of thumb'. But, intuitively, the efficiency goal is: we don't want our cursor to be jumping around like crazy reading different disks sectors and doing heavy math for operations we don't really need.<br/>Ideally, we'd like our cursor to read our disk blocks "in a straight line" while grabbing/analyzing data.. like it already does for some cases (e.g., playing some mp3 file or overwriting a partition with zeros).<br/>
+
 3.2. **OLTP** vs **OLAP**<br/>
 Okay, we'd like our cursor to run like Usain Bolt (and not like he was drunk). But that's not the only concern in the data world.<br/>
-Besides speed, another huge concern is with **transactions**. Transactions, in most use cases, must be ACID (atomic, consistent, isolated, durable) to prevent data loss, race conditions and the like. That's the **use-case where OLTP shines**. <br/>
-**OLAP, however, shines when the worries are not about transactions/ACID but about analytical speed**. 
+Besides speed, another huge concern is with **transactions**. Transactions, in most use cases, must be ACID (atomic, consistent, isolated, durable) to prevent data loss, race conditions and the like. **For this use-case OLTP shines**. <br/>
+**OLAP, however, shines when the worries are not about transactions/ACID but more about analytical speed**. 
 
