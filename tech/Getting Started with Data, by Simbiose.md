@@ -131,7 +131,7 @@ Can be enhanced with Machine Learning algorithms.
 4.2.1 **Linear regression**: Algorithms that try to model the association of two variables, so having one of them is possible to predict the other.<br/>
 4.2.2. **Logistic regression**: Algorithms that learn how old records were classified and guesses future classifications for new records.<br/>
 5. **Data Visualization**:<br/>
-Encompasses representing data and it's relationships in a graphical way. Ideally, it should also communicate key aspects of data in an intuitive and effective way.<br/>
+Encompasses **representing data and it's relationships in a graphical way**. Ideally, it should also communicate key aspects of data in an intuitive and effective way.<br/>
 The goal of data visualization is to make data analysis more palatable, easily presented and, therefore, more actionable.<br/>
 Examples of **visualizations**: *timelines*, *distributions*, *correlations* (e.g., *scatter plots*), *part-to-whole* (e.g., *pie charts*)<br/>
 6. **Technology for analytics**:<br/>
@@ -142,11 +142,18 @@ This choice will depend mostly on the structure of your data and there's no rule
 Data is superficially **transformed and prepared when loaded**, therefore being ready/trustworthy for analysis.<br/>
 6.1.1. **Physical DW**:<br/>
 This implementation consists of **putting a new database in place**, by buying/renting hardware and copying data to it etc.<br/>
-You get a single-purpose and centralized facility for all your analytics needs but it's not cheap.
+You get a single-purpose and centralized facility for all your analytics needs but it's not cheap.<br/>
 6.1.2. **Logical DW**:<br/>
 Think of this implementation as an '*API Gateway* for databases'. It's not a storage. It **is a catalog that links the data you want to 'where it is'**.<br/>
 With a physical DW you'd ask "give me this data". With a logical DW you'd ask, instead, "where is this data located, so I can go there fetch it?".<br/>
 It's way cheaper than building a physical DW but it will increase the workloads over the databases (that are already processing application requests).<br/><br/>
 6.2 **Data Lake**:<br/>
+A category of storage where **every type of data can be stored in the same context**.<br/>
+N.B., there's nothing stopping you from piping data from the Data Lake into a traditional Data Warehouse and performing the analytics there. In other words, Data Lakes are not a replacement for other databases.. they are, indeed, just another option.<br/>
+Strength: Implementing a Data Lake as an *Object Storage* (e.g., Amazon S3) allows applications to connect and use these data sources more naturally (since most programming languages nowadays are, substantially, object-oriented) spawning more options for advanced analytics.<br/>
+Weakness: The lack of organization hierarchy allows 'continuous misuses' of the Data Lake to possibly turn it into a *Data Swamp* (a mess), reducing it's analytical power and, therefore, general usefulness.
 <br/><br/>
 6.3. **Data Lakehouse**:<br/>
+This storage paradigm applies the structure of Physical DWs while using the simple and flexible storage of Data Lakes.</br>
+Strengths: Reduces costs significantly. Well suited for testing an analytics process.<br/>
+Weakness: Operational problems with scalability and security are not as fully addressed as it is on enterprise databases.<br/>
