@@ -102,3 +102,19 @@ Weaknesses: Vendor lock-in. Account hijacking. Limited control flexibility. Upti
 Definition: Combining both approaches (Cloud + On-premises).<br/>
 Strenghts: Higher level of system adecquacy to your business/infrastructure needs.<br/>
 Weaknesses: Added complexity, since you might need to develop your own integrations and manage two infrastructures. Higher possibility of future 'surprises' and other bumps on the road.<br/>
+
+## Chapter 5: How Data is Analyzed
+### Key points
+
+1. We're introduced to the concept of **Data Analytics**: a set of techniques and tools for processes for data discovery, exploration, interpretation, pattern identification and information extracting based on statistical concepts/operations and enhanced with computation tools.<br/>
+In short, **Data Analytics** are all the things we do in order to get insights from data.
+2. Next, we're presented with the 5 main types of analysis (in ascending order of difficulty/value): Descriptive, Diagnostic, Predictive, Prescriptive.<br/>
+2.1. **Descriptive Analysis**:<br/>
+Doesn't try to provide reasons or solutions, they are way closer to being factual evidence than being insightful knowledge or wisdom.<br/>
+Examples of **Descriptive Analytics**: What percentage of users opens our email messages? Did we make more or less money than the mean value for the previous 6 months?<br/>
+2.2. **Diagnostic Analysis**:<br/>
+Provides reasons for "something that happened".<br/>
+Examples of **Diagnostic Analytics**: Only 10% of users opens our emails because X? Our revenue for this month was lower than the mean value for the previous 6 months because Y happened.<br/>
+2.3.**Predictive Analysis**:<br/>
+Diagnostic Analysis are somewhat "derived" from Descriptive Analysis, that is, some event must happen first (and we must acknowledge it via Descriptive Analysis) for us to, then, perform Diagnostic Analysis.<br/>
+Predictive Analysis, however, doesn't depend on "past events". Therefore, it can 'foresee' future events (that may have never occurred before).<br/>
