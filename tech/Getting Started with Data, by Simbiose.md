@@ -87,7 +87,7 @@ Graph Databases usually implement their own query language (e.g., `Cypher` for `
 Examples of **Graph Databases**: `Neo4j` (not SPARQL-compliant, uses `Cypher`), `GraphDB` (SPARQL-compliant, uses `SPARQL`)<br/>
 4.4. **Search Engines**: Instead of focusing on "what the data must look like" (as the relational model does) or "what are the relationships between data" (as the relational model and graphs do), the goal of the search engine is simply to **find the data you want**.<br/>
 These engines leverage optimized text-search algorithms, ranking and many other heuristics.<br/>
-Examples of **Search Engines**: `ElasticSearch` (returns JSON data), `Google` (returns a list of Web Pages)<br/><br/>
+Examples of **Search Engines**: `ElasticSearch` (returns JSON data), `Google` (returns a list of Web Pages)<br/>
 
 5. Talking about Storage Location, there are 3 options: it can be `On-premises`, `Cloud-based (private or public cloud)` or `Hybrid (a combination of the previous ones)`.<br/>
 5.1. **On-premises**:<br/>
@@ -105,7 +105,6 @@ Weaknesses: Added complexity, since you might need to develop your own integrati
 
 ## Chapter 5: How Data is Analyzed
 ### Key points
-
 1. We're introduced to the concept of **Data Analytics**: a set of techniques and tools for processes for data discovery, exploration, interpretation, pattern identification and information extracting based on statistical concepts/operations and enhanced with computation tools.<br/>
 In short, **Data Analytics** are all the things we do in order to get insights from data.
 2. Next, we're presented with the 4 main categories of analysis (in ascending order of difficulty/value): Descriptive, Diagnostic, Predictive, Prescriptive.<br/>
@@ -118,3 +117,36 @@ Examples of **Diagnostic Analytics**: Only 10% of users opens our emails because
 2.3.**Predictive Analysis**:<br/>
 Diagnostic Analysis are somewhat "derived" from Descriptive Analysis, that is, some event must happen first (and we must acknowledge it via Descriptive Analysis) for us to, then, perform Diagnostic Analysis.<br/>
 Predictive Analysis, however, doesn't depend on "past events". Therefore, it can 'foresee' future events (that may have never occurred before).<br/>
+Examples of **Predictive Analysis**: Will soy prices rise or fall next month? How strong will the upcoming Atlantic hurricane season be?
+Can be enhanced with Machine Learning algorithms.
+2.4. **Prescriptive Analysis**:<br/>
+Instead of just 'foreseeing' the future, the goal of this analysis is to provide us with an action (or a set of actions) in order to make some tangible event happen.<br/>
+Example of **Prescriptive Analysis**: What actions should be taken in order to grow the company's revenue by 10% in the next quarter?<br/>
+Can be enhanced with Machine Learning algorithms.
+### In-depth
+3. A **Machine Learning algorithm** can be defined as: some set of algorithms, statistical functions and heuristics applied to (1) classify existing data and (2) discover what characteristics of each record contributed to the result.<br/>
+4. Feeding data into a machine learning algorithm is called **modeling**. After doing it, we can say that **our data has been modeled**.<br/>
+4.1. **Unsupervised learning**: Algorithms that don't leverage values from past data to learn from (e.g., *clustering* algorithms).<br/>
+4.2. **Supervised learning**: Algorithms that learn how the previous results were achieved and tries to guess similar results for future (or simulated) records.
+4.2.1 **Linear regression**: Algorithms that try to model the association of two variables, so having one of them is possible to predict the other.<br/>
+4.2.2. **Logistic regression**: Algorithms that learn how old records were classified and guesses future classifications for new records.<br/>
+5. **Data Visualization**:<br/>
+Encompasses representing data and it's relationships in a graphical way. Ideally, it should also communicate key aspects of data in an intuitive and effective way.<br/>
+The goal of data visualization is to make data analysis more palatable, easily presented and, therefore, more actionable.<br/>
+Examples of **visualizations**: *timelines*, *distributions*, *correlations* (e.g., *scatter plots*), *part-to-whole* (e.g., *pie charts*)<br/>
+6. **Technology for analytics**:<br/>
+Don't forget the main objective behind all this: **to become data-driven**. In light of this objective, providing a space where data is (centrally) available will help tremendously in developing a **data-driven culture**.<br/>
+That's why a **central storage for data** (usually geared towards to Analytics, like an OLAP database) is essential. However, there is more than one option for a central storage and choosing the most appropriate one is vital.<br/>
+This choice will depend mostly on the structure of your data and there's no rule of thumb. But there is a general guideline: **Data Warehouses** for mostly structured data and **Data Lakes** for mostly unstructured data.<br/><br/>
+6.1. **Data Warehouse (DW)**:<br/>
+Data is superficially **transformed and prepared when loaded**, therefore being ready/trustworthy for analysis.<br/>
+6.1.1. **Physical DW**:<br/>
+This implementation consists of **putting a new database in place**, by buying/renting hardware and copying data to it etc.<br/>
+You get a single-purpose and centralized facility for all your analytics needs but it's not cheap.
+6.1.2. **Logical DW**:<br/>
+Think of this implementation as an '*API Gateway* for databases'. It's not a storage. It **is a catalog that links the data you want to 'where it is'**.<br/>
+With a physical DW you'd ask "give me this data". With a logical DW you'd ask, instead, "where is this data located, so I can go there fetch it?".<br/>
+It's way cheaper than building a physical DW but it will increase the workloads over the databases (that are already processing application requests).<br/><br/>
+6.2 **Data Lake**:<br/>
+<br/><br/>
+6.3. **Data Lakehouse**:<br/>
