@@ -108,7 +108,7 @@ Weaknesses: Added complexity, since you might need to develop your own integrati
 
 1. We're introduced to the concept of **Data Analytics**: a set of techniques and tools for processes for data discovery, exploration, interpretation, pattern identification and information extracting based on statistical concepts/operations and enhanced with computation tools.<br/>
 In short, **Data Analytics** are all the things we do in order to get insights from data.
-2. Next, we're presented with the 5 main types of analysis (in ascending order of difficulty/value): Descriptive, Diagnostic, Predictive, Prescriptive.<br/>
+2. Next, we're presented with the 4 main categories of analysis (in ascending order of difficulty/value): Descriptive, Diagnostic, Predictive, Prescriptive.<br/>
 2.1. **Descriptive Analysis**:<br/>
 Doesn't try to provide reasons or solutions, they are way closer to being factual evidence than being insightful knowledge or wisdom.<br/>
 Examples of **Descriptive Analytics**: What percentage of users opens our email messages? Did we make more or less money than the mean value for the previous 6 months?<br/>
