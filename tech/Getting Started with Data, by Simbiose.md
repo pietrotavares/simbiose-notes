@@ -1,4 +1,4 @@
-kk# Getting Started with Data
+# Getting Started with Data
 Author: Simbiose Ventures<br/>
 Category: Data Analysis<br/>
 Pages: 211<br/>
@@ -180,6 +180,6 @@ Map your processes and important/sensitive data. Also, never follow your arbitra
 Leverage tools such as: *metadata catalogs*, *data modification history* and *data access logs*.<br/>
 Have someone (or some department) dedicated exclusively to *data quality* concerns, keep data with very different natures separate in different *data hubs*.
 6. **Data Quality**:<br/>
-Memorize these two mnemonics in order to help you remember what characteristics drive Data Quality: **compac-convac** and **prelinerep**.<br/>
+Memorize these two mnemonics in order to help you remember what characteristics drive Data Quality: **compac-convac** and **prelinerep**<br/>
 **compac-convac** stands for **comp**leteness, **ac**curacy, **con**sistency, **v**alidity, **ac**cessibility.<br/>
 **prelinerep** stands for **pre**cision, **line**age and **rep**resentation.<br/>
