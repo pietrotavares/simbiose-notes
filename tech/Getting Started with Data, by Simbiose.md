@@ -1,4 +1,4 @@
-# Getting Started with Data
+kk# Getting Started with Data
 Author: Simbiose Ventures<br/>
 Category: Data Analysis<br/>
 Pages: 211<br/>
@@ -170,5 +170,16 @@ We call any **predetermined/automated set of actions new data is submitted to be
 Pipelines typically consist of 3 actions: **Extract, Transform, Load (ETL)**. Logically, data is first **extracted** from some source then **transformed** until becoming ready to be **loaded** into analytics tools/databases.<br/>
 3. **Data Democratization and Data Governance**:<br/>
 The goal of data democratization is to empower people (and their decision making) by making data more easily and quickly accessible to them.<br/>
-The problem is: "what about sensitive data?".. that's where *Data Governance* comes in.
+The problem is: "what about sensitive data?". That's where *Data Governance* comes in.
 4. **Data Governance frameworks**:<br/>
+Memorize these two mnemonics in order to help you remember which scopes are addressed by a *Data Governance framework*: **mostosecin** and **domamequa**.<br/>
+*mostosecin* stands for data **mo**deling, **sto**rage, **sec**urity and **in**tegration.<br/>
+*domamequa* stands for **do**cumentation, **ma**in source of truth, **me**tadata and **qua**lity.<br/>
+5. **Tips to perform a good Data Auditing**:<br/>
+Map your processes and important/sensitive data. Also, never follow your arbitrary assumptions about the transformations and ETL processes on your data.. constantly ask questions!
+Leverage tools such as: *metadata catalogs*, *data modification history* and *data access logs*.<br/>
+Have someone (or some department) dedicated exclusively to *data quality* concerns, keep data with very different natures separate in different *data hubs*.
+6. **Data Quality**:<br/>
+Memorize these two mnemonics in order to help you remember what characteristics drive Data Quality: **compac-convac** and **prelinerep**.<br/>
+**compac-convac** stands for **comp**leteness, **ac**curacy, **con**sistency, **v**alidity, **ac**cessibility.<br/>
+**prelinerep** stands for **pre**cision, **line**age and **rep**resentation.<br/>
