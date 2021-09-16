@@ -156,4 +156,19 @@ Weakness: The lack of organization hierarchy allows 'continuous misuses' of the 
 6.3. **Data Lakehouse**:<br/>
 This storage paradigm applies the structure of Physical DWs while using the simple and flexible storage of Data Lakes.</br>
 Strengths: Reduces costs significantly. Well suited for testing an analytics process.<br/>
-Weakness: Operational problems with scalability and security are not as fully addressed as it is on enterprise databases.<br/>
+Weakness: Operational problems with scalability and security are not as fully addressed as it is on enterprise databases.<br/><br/>
+6.4. **Business Intelligence platforms**:<br/>
+Tools built to help businesses perform analytics more easily. They wrap powerful visualization tools as well as statistical/analytics functions within user-friendly interfaces.<br/>
+Benefits of using a *BI platform* include: shorter reaction times to market changes and *data democratization*, which empowers all members of the organization to provide insights and suggestions based on data (instead of relying heavily on a few executives/technicians experiences).
+
+## Chapter 6: How Data is Managed
+### Key points
+1. We're introduced to the discipline of **Data Engineering**: building (and running) all infrastructure needed to support data processes and analytics. More than that, besides knowing the ins and outs of the infrastructure and database solutions, Data Engineers must be able to reason about the integrity/trustworthiness (and usefulness, to some degree) of data.<br/>
+N.B., unlike *Data Scientists*, it's **not expected from Data Engineers to deliver business insights from data**. However, **data also encompasses application logs (remember?)** so it is, indeed, expected from Data Engineers to reason about, and act upon, insights from some data.. mostly for troubleshooting/optimization purposes, therein.<br/>
+2. **Data Pipelines and ETL**:<br/>
+We call any **predetermined/automated set of actions new data is submitted to before becoming "ready"** a *Pipeline*. In order to build a pipeline, Data Engineers must first know what are the business questions and necessities to be addressed by the analytics. In short, it's not a "technical-only" task.<br/>
+Pipelines typically consist of 3 actions: **Extract, Transform, Load (ETL)**. Logically, data is first **extracted** from some source then **transformed** until becoming ready to be **loaded** into analytics tools/databases.<br/>
+3. **Data Democratization and Data Governance**:<br/>
+The goal of data democratization is to empower people (and their decision making) by making data more easily and quickly accessible to them.<br/>
+The problem is: "what about sensitive data?".. that's where *Data Governance* comes in.
+4. **Data Governance frameworks**:<br/>
