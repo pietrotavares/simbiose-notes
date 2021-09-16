@@ -117,8 +117,8 @@ Examples of **Diagnostic Analytics**: Only 10% of users opens our emails because
 2.3.**Predictive Analysis**:<br/>
 Diagnostic Analysis are somewhat "derived" from Descriptive Analysis, that is, some event must happen first (and we must acknowledge it via Descriptive Analysis) for us to, then, perform Diagnostic Analysis.<br/>
 Predictive Analysis, however, doesn't depend on "past events". Therefore, it can 'foresee' future events (that may have never occurred before).<br/>
-Examples of **Predictive Analysis**: Will soy prices rise or fall next month? How strong will the upcoming Atlantic hurricane season be?
-Can be enhanced with Machine Learning algorithms.
+Examples of **Predictive Analysis**: Will soy prices rise or fall next month? How strong will the upcoming Atlantic hurricane season be?<br/>
+Can be enhanced with Machine Learning algorithms.<br/>
 2.4. **Prescriptive Analysis**:<br/>
 Instead of just 'foreseeing' the future, the goal of this analysis is to provide us with an action (or a set of actions) in order to make some tangible event happen.<br/>
 Example of **Prescriptive Analysis**: What actions should be taken in order to grow the company's revenue by 10% in the next quarter?<br/>
@@ -127,7 +127,7 @@ Can be enhanced with Machine Learning algorithms.
 3. A **Machine Learning algorithm** can be defined as: some set of algorithms, statistical functions and heuristics applied to (1) classify existing data and (2) discover what characteristics of each record contributed to the result.<br/>
 4. Feeding data into a machine learning algorithm is called **modeling**. After doing it, we can say that **our data has been modeled**.<br/>
 4.1. **Unsupervised learning**: Algorithms that don't leverage values from past data to learn from (e.g., *clustering* algorithms).<br/>
-4.2. **Supervised learning**: Algorithms that learn how the previous results were achieved and tries to guess similar results for future (or simulated) records.
+4.2. **Supervised learning**: Algorithms that learn how the previous results were achieved and tries to guess similar results for future (or simulated) records.<br/>
 4.2.1 **Linear regression**: Algorithms that try to model the association of two variables, so having one of them is possible to predict the other.<br/>
 4.2.2. **Logistic regression**: Algorithms that learn how old records were classified and guesses future classifications for new records.<br/>
 5. **Data Visualization**:<br/>
