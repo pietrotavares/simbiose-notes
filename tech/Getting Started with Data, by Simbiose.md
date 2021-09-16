@@ -83,7 +83,7 @@ N.B., Although hashes are often used they are NOT necessary. Have another exampl
 `last_index_fetched: 398340`<br/>
 4.3. **Graph Databases**: Based either in *Labeled Properties* or *RDF Triple Stores* containing (1) **entity**, (2) **type of relationship** and (3) **value**. Example:<br/>
 ![image](https://user-images.githubusercontent.com/79336695/133505536-1bafa2c5-cba7-42e0-82db-05908325e7c7.png)<br/>
-Graph Databases usually implement their own query language (e.g., `Cypher` for `Neo4j`). However, the standard query language for RDF Datasets is SPARQL.<br/>
+Graph Databases usually implement their own query language (e.g., `Cypher` for `Neo4j`). However, the standard query language for *RDF Datasets* is SPARQL.<br/>
 Examples of **Graph Databases**: `Neo4j` (not SPARQL-compliant, uses `Cypher`), `GraphDB` (SPARQL-compliant, uses `SPARQL`)<br/>
 4.4. **Search Engines**: Instead of focusing on "what the data must look like" (as the relational model does) or "what are the relationships between data" (as the relational model and graphs do), the goal of the search engine is simply to **find the data you want**.<br/>
 These engines leverage optimized text-search algorithms, ranking and many other heuristics.<br/>
