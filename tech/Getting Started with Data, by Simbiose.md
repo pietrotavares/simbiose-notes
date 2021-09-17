@@ -183,3 +183,40 @@ Have someone (or some department) dedicated exclusively to *data quality* concer
 Memorize these two mnemonics in order to help you remember what characteristics drive Data Quality: **compac-convac** and **prelinerep**<br/>
 **compac-convac** stands for **comp**leteness, **ac**curacy, **con**sistency, **v**alidity, **ac**cessibility.<br/>
 **prelinerep** stands for **pre**cision, **line**age and **rep**resentation.<br/>
+
+## Exercises
+1. **How can we turn *data* into *wisdom*? Elaborate.** (hint: 3 steps)<br/>
+2. **What are the 6 basic data types?**<br/>
+3. **Give two examples of:**<br/>
+• user-generated data<br/>
+• software-generated data<br/>
+• hardware-generated data<br/>
+4. **Give two examples of:**<br/>
+• structured data<br/>
+• semi-structured data<br/>
+• unstructured data<br/>
+5. **How are records stored in the *Relational model*? How are *relationships* represented?**
+6. **Enunciate a scenario where a *document-model database* is better than a *lelational database* but worse than a *Graph database*. Justify your answer.**
+7. **Enunciate a scenario where a *key-value database* is better than a *document database* but worse than a *search engine*. Justify your answer.**
+8. **Which of the following statements are true?**<br/>
+• [ ] *Data lakes* can't hold structured data as they only support unstructured and semi-structured data.<br/>
+• [ ] *Row-stored data* allows fast analytics workloads and are, therefore, the standard in *data lakes*.<br/>
+• [ ] A *data lakehouse* has, generally, fewer chances of turning into a *data swamp* compared to a *data lake*.<br/>
+• [ ] Opting for a *data lakehouse* will address operational problems with scalability and security but will also increase costs significantly.<br/>
+• [ ] Implementing a *logical data warehouse* is cheaper than a *physical data warehouse* but will increase the workload over preexisting databases.<br/>
+9. **Fill the blanks with, either: `relational database`, `graph database`, `key-value database`, `document-model database` or `search engine`**<br/>
+• Neo4j is a `________`.<br/>
+• MongoDB is a `________`.<br/>
+• Amazon Aurora is a `________`.<br/>
+• Redis is a `________`.<br/>
+• Apache Cassandra is a `________`.<br/>
+• Amazon DynamoDB is a `________` and a `________`.<br/>
+• MariaDB is a `________`.<br/>
+• memcached is a `________`.<br/>
+• Amazon Neptune is a `________`.<br/>
+• Apache CouchDB is a `________`.<br/>
+10. **What can we find about our data by applying *linear regression*?**
+11. **Can we label *logistic regression* as a type of *predictive analysis*? Justify your answer.**
+
+## Solutions
+TODO
