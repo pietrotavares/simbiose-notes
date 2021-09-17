@@ -196,7 +196,7 @@ Memorize these two mnemonics in order to help you remember what characteristics 
 • semi-structured data<br/>
 • unstructured data<br/>
 5. **How are records stored in the *Relational model*? How are *relationships* represented?**
-6. **Enunciate a scenario where a *document-model database* is better than a *lelational database* but worse than a *Graph database*. Justify your answer.**
+6. **Enunciate a scenario where a *document-model database* is better than a *relational database* but worse than a *graph database*. Justify your answer.**
 7. **Enunciate a scenario where a *key-value database* is better than a *document database* but worse than a *search engine*. Justify your answer.**
 8. **Which of the following statements are true?**<br/>
 • [ ] *Data lakes* can't hold structured data as they only support unstructured and semi-structured data.<br/>
