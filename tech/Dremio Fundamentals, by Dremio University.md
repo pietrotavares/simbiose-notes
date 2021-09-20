@@ -41,3 +41,23 @@ There are 3 types of *data reflections*:<br/>
 - Aggregation reflections
 - External reflections
 > Data Reflections are stored in a high-performance, compressed, columnar representation based on Apache Parquet and Apache Arrow.<br/>
+
+---
+
+## **Data Curation**
+### **Type conversions**
+Dremio provides several type conversions functions for basic data types (e.g., strings, numbers and dates) via an intuitive graphical wizard.
+### **Complex types**
+Dremio provides options for curating structs and list-like objects, such as:
+- Extracting individual elements (e.g., prices[5]) or sublists (e.g., prices[0:8])
+- Flattening/Unnesting list types
+- Referencing individual elements in a struct (e.g., `select t1.property_map.field1 from mytable t1`, n.b., aliasing the dataset that contains the nested data is a requirement for this operation)
+
+---
+
+## **Jobs**
+A *job* is a discrete task that the cluster performs (e.g., a query from some BI tool, a backload maintenance task).<br/>
+Within the jobs interface, there's a history of runned jobs holding it's details.<br/>
+![image](https://user-images.githubusercontent.com/79336695/134071672-a2cc0110-5568-4045-a14a-b39fb9bcc416.png)
+
+###
