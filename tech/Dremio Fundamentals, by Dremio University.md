@@ -3,6 +3,7 @@
 ## Datasets
 ### **Dremio key objects**
 #### Data Source
+![image](https://user-images.githubusercontent.com/79336695/134027305-4104597b-8d14-4ae4-b943-f6f098125add.png)<br/>
 Any supported data source (e.g., `Amazon S3`, `Microsoft SQL Server`, `ElasticSearch`, `MongoDB`, `Hive`).<br/>
 The list of all available data sources is at: [https://docs.dremio.com/rest-api/catalog/container-source-types/](https://docs.dremio.com/rest-api/catalog/container-source-types/)
 > By the time of writing, ADLS Gen 2 is not supported.
