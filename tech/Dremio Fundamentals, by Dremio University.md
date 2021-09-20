@@ -3,10 +3,12 @@
 ## Datasets
 ### **Dremio key objects**
 #### **Data Source**
+![image](https://user-images.githubusercontent.com/79336695/134027305-4104597b-8d14-4ae4-b943-f6f098125add.png)<br/>
 Any supported data source (e.g., `Amazon S3`, `Microsoft SQL Server`, `ElasticSearch`, `MongoDB`, `Hive`)
 You can find a list of all available data sources at: [https://docs.dremio.com/rest-api/catalog/container-source-types/](https://docs.dremio.com/rest-api/catalog/container-source-types/)
 > By the time of writing, ADLS Gen 2 is not supported.
 #### **PDS** (*Physical Datasets*)
+![image](https://user-images.githubusercontent.com/79336695/134026932-d1a2e349-370d-46d1-8e13-d727b49fe945.png)<br/>
 Also called **promoted data files**.<br/>
 Supported formats: CSV/Excel/XLS, JSON, Parquet, ORC.<br/>
 A file (or group of files that share a common schema) that either (1) came from a configured *Data Source* or (2) was uploaded. **Immutable**.<br/>
@@ -60,4 +62,4 @@ A *job* is a discrete task that the cluster performs (e.g., a query from some BI
 Within the jobs interface, there's a history of runned jobs holding it's details.<br/>
 ![image](https://user-images.githubusercontent.com/79336695/134071672-a2cc0110-5568-4045-a14a-b39fb9bcc416.png)
 
-###
+##
