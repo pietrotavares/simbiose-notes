@@ -2,10 +2,13 @@
 
 ### Sources
 > From now on, by `Node` I mean a `Kubernetes Worker Node`.<br/>And, by `node` I mean [the traditional definition of a distributed system's node](https://www.techopedia.com/definition/5307/node#techopedia-explains-node)
+
 [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)<br/>
-[Top 50 Kubernetes Interview Questions And Answers for 2021](https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/)<br/>
 [What is a Kubernetes pod](https://www.redhat.com/en/topics/containers/what-is-kubernetes-pod)<br/>
+[Top 50 Kubernetes Interview Questions And Answers for 2021](https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/)<br/>
 [Top 55 Kubernetes Interview Questions and Answers for 2021](https://www.guru99.com/kubernetes-interview-questions-answers.html)<br/>
+
+### Questions
 
 1. What is a cluster computing and how is it different from grid computing?
 1. What is Kubernetes?
@@ -16,10 +19,9 @@
 1. What is a pod? Why does Kubernetes use them?
 1. How do pods communicat
 1. What is a Node? What are them made of? (hint: 3 components)
-1. What is a 
+1. TODO
 1. What is a 'master node' in Kubernetes?
 1. Which addon is strictly required for all Kubernetes cluster to have and what it does?
-101. 
 
 
 
@@ -31,8 +33,8 @@
 1. Docker builds the containers and these containers communicate with each other across the network via Kubernetes. Containers running on multiple hosts can be manually linked and orchestrated using Kubernetes.
 1. In *computing*, load balancing refers to the process of distributing a set of tasks over a set of resources (computing units), with the aim of making their overall processing more efficient.<br/>In *networking*, Load balancing is the process of distributing network traffic across multiple servers so that no single server bears too much demand.
 1. A Kubernetes pod is both (1) a collection of one or more Linux containers and (2) an abstraction/wrapper around containers. Pods are the smallest units of a Kubernetes application.<br/>
-1. A Kubernetes Node is a worker machine and may be either a virtual or a physical machine, depending on the cluster.
 1. TODO
+1. A Kubernetes Node is a worker machine and may be either a virtual or a physical machine, depending on the cluster. INCOMPLETE ANSWER.. TODO.
 1. TODO
 1. Cluster DNS.<br/>This addon serves DNS records for the Kubernetes services.
 
