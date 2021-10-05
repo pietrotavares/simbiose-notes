@@ -40,8 +40,7 @@
 6. Protobuf is a language-neutral, platform-neutral, extensible technology for serializing structured data – think XML, but smaller, faster, and simpler.
 7. Serialization is the process of converting a data object into a stream of bytes in order to store or transmit it.
 8. Data is not always in a form which can be streamed, a classical example is data containing references to other (local) data.<br/> E.g. if you have an object which contains a reference, that reference as bytes, alone, is of no use. Instead, you must stream the referenced data (by fetching it and bundling it together with the rest of the data, which is another of the marshalling algorithm's responsibilities).
-<<<<<<< HEAD
-9. A stub is, conceptually, a local façade to which a caller issues a RPC and from which a callee receives one. Stubs are responsible for (1) marshalling/unmarshalling of messages and (2) receiving/sending data from/to the transport layer (or, in other words, abstracting away network implementation details from the communication).
+9. A stub is, conceptually, a local façade to which a caller issues a RPC and from which a callee receives one. Stubs are responsible for (1) marshalling/unmarshalling of messages and (2) receiving/sending data from/to the transport layer (or, in other words, abstracting away network implementation details from the communication).<br/>![what-is-a-stub](https://user-images.githubusercontent.com/79336695/135722178-61e3dee9-761c-4f93-bc9e-3ff41622b91d.png)
 10. XML is a textual format while protobuf is a binary one.
 11. JSON is a textual format while protobuf is a binary one.
 12. When (1) you want data to be human readable and/or (2) when data from the service is directly consumed by a web browser.
@@ -55,5 +54,3 @@
 20. A "binary blob over HTTP/2" is, largely, what gRPC is, quintessentially. However, gRPC also provides several high-level features frequently missing in common HTTP libraries (e.g., cascading call-canelation, load balancing and failover).
 21. gRPC largely follows HTTP semantics over HTTP/2 but it, explicitly, allows for full-duplex streaming.<br/>Besides that, the fact that in gRPC paths are static (there are no query parameters) eliminates the need to thoroughly parse requests yielding reductions both in latency and complexity.<br/>Last but not least, gRPC's formalized set of errors are more directly applicable to API use cases than the traditional HTTP status codes. 
 22. By using proto3 instead of proto2 you (1) gain access to the full range of gRPC-supported languages and (2) avoid compatibility issues proto2 clients talking to proto3 servers and vice-versa.
-=======
-9. A stub is, conceptually, a local façade to which a caller issues a RPC and from which a callee receives one. Stubs are responsible for (1) marshalling/unmarshalling egressing/ingressing messages and (2) receiving/sending data from/to the transport layer (or, in other words, abstracting away network implementation details from the communication).<br/>![what-is-a-stub](https://user-images.githubusercontent.com/79336695/135722178-61e3dee9-761c-4f93-bc9e-3ff41622b91d.png)
