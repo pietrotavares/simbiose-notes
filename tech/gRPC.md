@@ -57,5 +57,3 @@
 22. By using proto3 instead of proto2 you (1) gain access to the full range of gRPC-supported languages and (2) avoid compatibility issues proto2 clients talking to proto3 servers and vice-versa.
 =======
 9. A stub is, conceptually, a local façade to which a caller issues a RPC and from which a callee receives one. Stubs are responsible for (1) marshalling/unmarshalling egressing/ingressing messages and (2) receiving/sending data from/to the transport layer (or, in other words, abstracting away network implementation details from the communication).<br/>![what-is-a-stub](https://user-images.githubusercontent.com/79336695/135722178-61e3dee9-761c-4f93-bc9e-3ff41622b91d.png)
-10. 
->>>>>>> befccf4a678317b1535b6cc10f0aa77015c1a90f
