@@ -23,11 +23,7 @@ Virtual datasets can be saved to your *home space* or to a *shared space*.<br/>
 Directory-like containers for VDS files. Supports authorization/permissions.<br/>
 Spaces allow grouping datasets by a common theme (e.g., project, region, owner).<br/>
 #### **Home Space**
-<<<<<<< HEAD
-Private "usr-work area" container for both PDS and VDS files.<br/>
-=======
-Private "user-work area" container for both PDS and VDS files.<br/>
->>>>>>> db1cfe94a9cae4a6944b1538db9e514a8937a345
+A private "user-work area" (if you will) container for PDS and VDS files.<br/>
 Uploaded files go here after being promoted.<br/>
 > The *home space* (or *home area*) is automatically created and is the same as your username.
 #### **Folder**
@@ -66,7 +62,7 @@ A *job* is a discrete task that the cluster performs (e.g., a query from some BI
 Within the jobs interface, there's a history of runned jobs holding it's details.<br/>
 ![image](https://user-images.githubusercontent.com/79336695/134071672-a2cc0110-5568-4045-a14a-b39fb9bcc416.png)
 
-<<<<<<< HEAD
+
 ## **Privileges**
 ### Types
 Several types of privileges are available, depending on the object type. They follow:<br/>
@@ -94,6 +90,3 @@ Granting privileges on all existing and future datasets:<br/>
 GRANT SELECT, ALTER ON FOLDER
 Space1.Folder1 TO USER joel
 ```
-=======
-##
->>>>>>> db1cfe94a9cae4a6944b1538db9e514a8937a345
